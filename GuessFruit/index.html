@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Guess Fruit</title>
+		<meta charset="utf-8">
+		<link href="styles.css" rel="stylesheet">
+		<link href="normalize.css" rel="stylesheet">
+		<script src="scripts/otherFunc.js"></script>
+		<script src="scripts/pressing.js"></script>
+		<script src="scripts/jquery-2.2.2.js"></script>
+		<script src="scripts/masterFile.js"></script>
+	</head>
+	<body>
+		<audio id="bgSound" ></audio>
+		<audio id="otherSound"  src="" autoplay></audio>
+	
+	
+		<div id="windowEclipse"></div>	
+		
+		<div id="containDialogWindow">
+			<div id="dialogWindowLose" class="dialogWindow">
+				<div id="massagelose">You lose!
+					<hr>
+					<p>
+						Якщо хочете зіграти ще раз, натисніть на кнопку,а якщо ви зрозуміли, що виграти у цій грі вам не під силу, тоді закрийте вкладку! 
+					</p>
+				</div>
+				<div class="reloadInDialogWindow"></div>
+			</div>		
+			
+			<div id="dialogWindowWin" class="dialogWindow">
+				<div id="massageWin">You Win!
+					<hr>
+					<p>
+						Ви красовчік! Якщо хочете ще раз доказати всю велич свого мозку, то натисніть на кнопку, а якщо ви вважаєте, що тратите час впусту (так воно і є), тоді закрийте вкладку!
+					</p>
+				</div>
+				<div class="reloadInDialogWindow"></div>
+			</div>
+		</div>
+
+		<div id="settingsWindow">
+			<div id="treangle"></div>
+			<input type="button" id="buttonSaveSettings" value="Зберегти"></input>
+			<div id="textSettings">
+				<div id="txtTmrToStart">Час на запам’ятовування:</div>
+				<div id="txtTmrAfterStart">Час на проходження:</div>
+			</div>
+			
+			<select id="selectTimerToStart"  class="selectTimer" autocomplete="on">
+				<option value="1">1 сек.</option>
+				<option value="5">5 сек.</option>
+				<option value="10">10 сек.</option>
+				<option value="20">20 сек.</option>
+			</select>
+			<br>
+			<br>
+			<select id="selectTimerAfterStart" class="selectTimer">
+				<option value="10">10 сек.</option>
+				<option value="20">20 сек.</option>
+				<option value="30">30 сек.</option>
+				<option value="40">40 сек.</option>
+				<option value="50">50 сек.</option>
+				<option value="60">60 сек.</option>
+			</select>
+		</div>
+		
+		
+		<div id="gameContain">
+			<div id="bigdiv">
+				<div id="1_1" class="smallDiv"></div>
+				<div id="1_2" class="smallDiv"></div>
+				<div id="2_1" class="smallDiv"></div>
+				<div id="2_2" class="smallDiv"></div>
+				<div id="3_1" class="smallDiv"></div>
+				<div id="3_2" class="smallDiv"></div>
+				<div id="4_1" class="smallDiv"></div>
+				<div id="4_2" class="smallDiv"></div>
+				<div id="5_1" class="smallDiv"></div>
+				<div id="5_2" class="smallDiv"></div>
+				<div id="6_1" class="smallDiv"></div>
+				<div id="6_2" class="smallDiv"></div>
+				<div id="7_1" class="smallDiv"></div>
+				<div id="7_2" class="smallDiv"></div>
+				<div id="8_1" class="smallDiv"></div>
+				<div id="8_2" class="smallDiv"></div>
+			</div>
+			
+			
+			<div id="menu">
+				<div id="start"  title="Start" ></div>
+				<div id="reloadInMenu" class="reloadButton"  title="Reload"></div>
+			 	<div id="timer">00:00</div>
+				<div id="settingsIcon" title="Settings"></div>
+			</div>
+		</div>
+		
+
+	</body>
+
+</html>

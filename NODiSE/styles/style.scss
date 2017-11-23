@@ -1,0 +1,267 @@
+html{
+	height: 100%;
+}
+body{
+	background: url("../img/bgBody.jpg");
+	background-size: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+*{
+	transition: all .1s;
+}
+#header{
+	width: 100%; 
+	height: 150px;
+	position: fixed;
+	z-index: 1000;
+	#logo{
+		width: 230px;
+		height: 100%;
+		float: left;
+		background-image: url("../img/logo.png");
+	}
+	#headerMenuPC{
+		float: right;
+		width: 560px;
+		height: 25px;
+		margin-top: 61px;
+	}
+	.buttonInHeaderPC{
+		float: left;
+		height: 100%;
+		width: 70px;
+		margin-left: 60px;
+		line-height: 25px;
+		font-size: 18px;
+		color: #a4a6a7;
+		cursor: pointer;
+		text-align: center;
+		-moz-user-select: none;
+   		-webkit-user-select: none;
+    	-ms-user-select: none;
+		&:hover{
+			color: #fff;
+		}
+		&:active{
+			transform: scale(.97);
+		}	
+	}
+
+	#languageMenu{
+		width: 40px;
+		height: 60px;
+		position: absolute;
+		display: none;
+		margin-left: 93%;
+		margin-top: 90px;
+		.lan{
+			width: 40px;
+			height: 30px;
+			text-align: center;
+			font-size: 18px;
+			color: #a4a6a7;
+			cursor: pointer;
+			&:hover{
+				color: #fff;
+			}
+			&:active{
+				transform: scale(.97);
+			}	
+		}
+	}
+}
+#wrapper{
+	width: 100%;
+	height: 100%;
+	#mainPage{
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		position: absolute;
+		#about{
+			height: 75%;
+			width: 50%;
+			position: absolute;
+			margin-top: 170px;
+			#txtAbout{
+				width: 90%;
+				margin-left: 10%;
+				font-family: Arial;
+				font-size: 15px;
+				color: #fff;
+				font-weight: 500;
+				span{
+					font-size: 28px;
+				}
+			}
+		}
+		#orderForm{
+			height: 75%;
+			width: 50%;
+			margin-top: 150px;
+			position: absolute;
+			margin-left: 50%;
+			font-family: Arial;
+			#form{
+				width: 48%;
+				height: 400px;
+				background: rgba(225,225,225, 0.2);
+				float: right;
+				margin-top: 5%;
+				margin-right: 10%;
+				#titleOrderForm{
+					width: 100%;
+					height: 50px;
+					color: #fff;
+					font-size: 22px;
+					line-height: 50px;
+					text-align: center;
+				}
+				#inputsOrderForm{
+					width: 100%;
+					height: 280px;
+					input{
+						width: 90%;
+						height: 35px;
+						margin-left: 5%;
+						margin-top: 15px;
+						background-color: #dfdfdf;
+						border: 1px solid #fff;
+						border-radius: 1px;
+						font-size: 17px;
+						&:hover{
+							background-color: #fff;	
+						}
+					}
+					#mail{
+						height: 100px;
+						font-size: 17px;
+						width: 90%;
+						border-radius: 1px;
+						height: 100px;
+						margin-left: 5%;
+						margin-top: 15px;
+						background-color: #dfdfdf;
+						border: 1px solid #fff;
+						resize: none;
+						&:hover{
+							background-color: #fff;	
+						}
+					}
+				}
+				#blockButtonOrder{
+					width: 38%;
+					opacity: .5;  
+					display: block;
+					margin-left: 5%;
+					color: #cdcdcd;
+					position: absolute;
+					height: 50px;	
+					background-color: #1487b1;
+					font-size: 25px;
+					text-align: center;
+					line-height: 50px;
+					border-radius: 1px;
+				}
+				#buttonOrder{
+						width: 38%;
+						height: 50px;
+						position: absolute;
+						margin-left: 5%;
+						background-color: #1487b1;
+						display: none;
+						color: #fff;
+						border: 1px solid #fff;
+						cursor: pointer;
+						font-size: 25px;
+						text-align: center;
+						line-height: 50px;
+						border-radius: 1px;
+						-moz-user-select: none;
+	    				-webkit-user-select: none;
+	    				-ms-user-select: none;
+					&:hover{
+						background-color: #62b8d7;
+					}
+					&:active{
+						transform: scale(.97);
+					}
+				}
+			}
+		}
+	}
+	#contactsPage{
+		width: 100%;
+		height: 100%;
+		display: none;
+		position: absolute;
+		opacity: 0;
+		padding-top: 250px;
+		#contacts{
+			width: 300px;
+			height: 200px;
+			margin: 0 auto;
+			border: 2px solid #fff;
+			font-size: 25px;
+			text-align: center;
+			color: #fff;
+		}
+	}
+	#pricesPage{
+		width: 100%;
+		height: 100%;
+		display: none;
+		position: absolute;
+		opacity: 0;
+		padding-top: 250px;
+		#prices{
+			width: 500px;
+			height: 250px;
+			margin: 0 auto;
+			table{
+				border: 2px solid #fff;
+				border-radius: 10px;
+				font-size: 25px;
+				font-weight: 400;
+				border-radius: 50px;
+				height: 100%;
+				color: #fff;
+				thead{
+					background-color: #1487b1;
+				}
+			}
+		}
+	}
+	#thanksForOrder{
+		width: 700px;
+		height: 500px;
+		color: #fff;
+		opacity: 0;
+		margin: 0 auto;
+		padding-top: 250px;
+		display: none;
+		font-size: 35px;
+		text-align: center;
+		#mainPageInThanks{
+			width: 120px;
+			height: 40px;
+			line-height: 40px;
+			font-size: 20px;
+			border: 2px solid #fff;
+			margin-left: 290px;
+			margin-top: 30px;
+			cursor: pointer;
+			&:hover{
+				background-color: #fff;
+				color: #000;
+			}
+			&:active{
+				transform: scale(.97);
+			}
+		}
+	}
+}
