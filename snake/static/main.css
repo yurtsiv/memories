@@ -1,0 +1,26 @@
+body {
+	background-color:#ccc;
+}
+
+#field-container {
+	margin: auto;
+}
+
+.field-item {
+	float: left;
+	box-sizing: border-box;
+	border-left: 1px solid #F6F6F6;
+	border-bottom: 1px solid #F6F6F6;
+}
+
+.active {
+	border-left: 1px solid #EAEAEA;
+	border-bottom: 1px solid #EAEAEA;
+}
+
+#status-bar {
+	width: 40px;
+	height: 150px;
+	position: absolute;
+	right: 50px;
+}
